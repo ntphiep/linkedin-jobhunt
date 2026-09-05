@@ -1,0 +1,78 @@
+{
+  "_comment": "FILE MẪU. Đừng sửa tay. Chạy: python scripts/build_profile.py <CV.pdf>",
+  "_generated": {
+    "from_cv": "/duong/dan/CV.pdf",
+    "at": "YYYY-MM-DD",
+    "by": "scripts/build_profile.py"
+  },
+  "identity": {
+    "name": "Nguyen Van A",
+    "title": "Data Engineer",
+    "linkedin": "https://www.linkedin.com/in/example",
+    "email": "you@example.com",
+    "phone": "(+84) 900000000"
+  },
+  "seniority": {
+    "years_experience": 3.0,
+    "career_start": "2023-01",
+    "periods_detected": 1
+  },
+  "skills": {
+    "core": {
+      "python": 3,
+      "sql": 3
+    },
+    "strong": {
+      "airflow": 2,
+      "spark": 2
+    },
+    "familiar": {
+      "kafka": 1
+    },
+    "gaps": {
+      "hard": [
+        "java",
+        "scala"
+      ]
+    }
+  },
+  "certifications": [
+    "AWS Certified Data Engineer - Associate"
+  ],
+  "domains": {
+    "experienced": [
+      "fintech",
+      "retail"
+    ]
+  },
+  "target_roles": {
+    "primary": [
+      "data engineer",
+      "cloud data engineer",
+      "analytics engineer",
+      "etl developer",
+      "data platform engineer"
+    ],
+    "secondary": [
+      "python developer",
+      "python engineer",
+      "cloud engineer",
+      "devops engineer",
+      "platform engineer"
+    ]
+  },
+  "constraints": {
+    "needs_visa_sponsorship": true,
+    "can_work_us_payroll": false,
+    "language_blockers": [
+      "native english",
+      "native speaker",
+      "fluent german",
+      "fluent french",
+      "japanese required",
+      "korean required",
+      "mandarin required",
+      "jlpt"
+    ]
+  }
+}

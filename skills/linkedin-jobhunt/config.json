@@ -1,0 +1,118 @@
+{
+  "_comment": "Chỉ chứa tham số TÌM KIẾM. Kỹ năng, thang điểm, bộ lọc nằm ở profile.json.",
+  "geo_ids": {
+    "Vietnam": "104195383",
+    "Hanoi": "105790653",
+    "Ho Chi Minh City": "103697962",
+    "Singapore": "102454443",
+    "Australia": "101452733"
+  },
+  "search_matrix": {
+    "_comment": "Chỉ 3 nghề: Data Engineer, Cloud/DevOps Engineer, Python Developer. score.py có cổng chặn cứng, tiêu đề ngoài 3 nhóm này bị loại chứ không chấm điểm thấp.",
+    "jobs": [
+      {
+        "bucket": "remote",
+        "search": "data engineer",
+        "workplaceType": "remote",
+        "sortBy": "date"
+      },
+      {
+        "bucket": "remote",
+        "search": "cloud data engineer",
+        "workplaceType": "remote",
+        "sortBy": "date"
+      },
+      {
+        "bucket": "remote",
+        "search": "analytics engineer",
+        "workplaceType": "remote",
+        "sortBy": "date"
+      },
+      {
+        "bucket": "remote",
+        "search": "cloud engineer",
+        "workplaceType": "remote",
+        "sortBy": "date"
+      },
+      {
+        "bucket": "remote",
+        "search": "devops engineer",
+        "workplaceType": "remote",
+        "sortBy": "date"
+      },
+      {
+        "bucket": "remote",
+        "search": "python developer",
+        "workplaceType": "remote",
+        "sortBy": "date"
+      },
+      {
+        "bucket": "contract",
+        "search": "data engineer",
+        "employmentType": "contract",
+        "sortBy": "date"
+      },
+      {
+        "bucket": "vietnam",
+        "search": "data engineer",
+        "geoId": "104195383",
+        "sortBy": "date"
+      },
+      {
+        "bucket": "vietnam",
+        "search": "cloud engineer",
+        "geoId": "104195383",
+        "sortBy": "date"
+      },
+      {
+        "bucket": "vietnam",
+        "search": "python developer",
+        "geoId": "104195383",
+        "sortBy": "date"
+      },
+      {
+        "bucket": "singapore",
+        "search": "data engineer",
+        "geoId": "102454443",
+        "sortBy": "date"
+      },
+      {
+        "bucket": "australia",
+        "search": "data engineer",
+        "geoId": "101452733",
+        "sortBy": "date"
+      }
+    ],
+    "posts": [
+      {
+        "search": "hiring data engineer remote",
+        "sortBy": "date"
+      },
+      {
+        "search": "hiring data engineer",
+        "sortBy": "date"
+      },
+      {
+        "search": "data engineer vietnam",
+        "sortBy": "date"
+      },
+      {
+        "search": "hiring cloud engineer remote",
+        "sortBy": "date"
+      },
+      {
+        "search": "hiring devops engineer remote",
+        "sortBy": "date"
+      },
+      {
+        "search": "hiring python developer remote",
+        "sortBy": "date"
+      }
+    ]
+  },
+  "output": {
+    "excel_path": "DE_Jobs_Hiep.xlsx",
+    "legacy_sheet_name": "Jobs & Posts",
+    "history_file": "seen_history.json"
+  }
+}

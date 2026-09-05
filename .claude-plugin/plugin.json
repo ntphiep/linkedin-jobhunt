@@ -1,0 +1,20 @@
+{
+  "name": "linkedin-jobhunt",
+  "displayName": "LinkedIn Job Hunt",
+  "version": "1.0.0",
+  "description": "Score LinkedIn job postings against your actual CV and export a spreadsheet that tells you where to apply",
+  "author": {
+    "name": "ntphiep",
+    "url": "https://github.com/ntphiep"
+  },
+  "homepage": "https://github.com/ntphiep/linkedin-jobhunt",
+  "repository": "https://github.com/ntphiep/linkedin-jobhunt",
+  "license": "MIT",
+  "keywords": [
+    "linkedin",
+    "job-search",
+    "cv-matching",
+    "data-engineer",
+    "excel"
+  ]
+}

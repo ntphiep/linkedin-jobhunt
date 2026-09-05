@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "linkedin": {
+      "command": "npx",
+      "args": ["-y", "@yilin-jing/linkedin-mcp"],
+      "env": { "HARVESTAPI_API_KEY": "${HARVESTAPI_API_KEY}" }
+    }
+  }
+}

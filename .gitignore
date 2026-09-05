@@ -1,0 +1,10 @@
+# Hồ sơ cá nhân: SINH RA từ CV bằng scripts/build_profile.py, không đẩy lên git
+profile.json
+
+# Lịch sử tin đã xem, riêng từng máy
+seen_history.json
+
+# Kết quả chạy
+*.xlsx
+__pycache__/
+*.pyc

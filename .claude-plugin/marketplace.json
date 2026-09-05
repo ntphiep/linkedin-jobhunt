@@ -1,0 +1,16 @@
+{
+  "name": "ntphiep-plugins",
+  "owner": {
+    "name": "ntphiep",
+    "url": "https://github.com/ntphiep"
+  },
+  "description": "Personal plugins by ntphiep",
+  "plugins": [
+    {
+      "name": "linkedin-jobhunt",
+      "source": "./",
+      "description": "Score LinkedIn jobs against your CV, export to Excel",
+      "version": "1.0.0"
+    }
+  ]
+}

@@ -1,18 +1,18 @@
-"""Gộp file JSON do MCP linkedin ghi ra, khử trùng, lọc theo thời gian.
+"""Merge the JSON files written by the linkedin MCP, dedupe them, filter by time.
 
-Khử trùng hai tầng:
-  1. theo linkedinUrl hoặc id  (bắt trùng y hệt)
-  2. theo hash nội dung        (bắt cùng bài đăng lại ở URL khác)
+Two-tier deduplication:
+  1. by linkedinUrl or id  (catches exact duplicates)
+  2. by content hash       (catches the same post reappearing at a different URL)
 
-Lọc thời gian dựa trên postedDate với job (chính xác) và postedAgo với
-post (xấp xỉ). Item không có thông tin thời gian thì giữ lại.
+Time filtering is based on postedDate for jobs (exact) and postedAgo for
+posts (approximate). An item with no time info is kept.
 
 Usage:
   python merge_dedup.py <input_dir> <output_file> [hours]
 
-Ví dụ:
+Example:
   python merge_dedup.py tmp/jobs merged_jobs.json 2
-  python merge_dedup.py tmp/posts merged_posts.json      # không lọc thời gian
+  python merge_dedup.py tmp/posts merged_posts.json      # no time filtering
 """
 import sys, json, glob, os
 from datetime import datetime, timezone

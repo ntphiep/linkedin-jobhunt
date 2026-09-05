@@ -1,13 +1,13 @@
-"""Ghi nhớ item đã thấy ở các lần chạy trước, để lần sau chỉ xem tin mới.
+"""Remember items seen in previous runs, so the next run only shows new postings.
 
-Lịch sử lưu ở <skill_dir>/seen_history.json dạng { key: lần_thấy_đầu_ISO }.
-Key là linkedinUrl / url / id, giống khoá khử trùng của merge_dedup.
+History is stored at <skill_dir>/seen_history.json as { key: first_seen_ISO }.
+The key is linkedinUrl / url / id, same as merge_dedup's dedup key.
 
-Cách dùng:
-  python history.py mark <classified.json>            ghi các key vào lịch sử
-  python history.py filter <in.json> <out.json>       chỉ giữ item CHƯA từng thấy
-  python history.py stats                             xem lịch sử đang có gì
-  python history.py prune [days]                      xoá mục cũ hơn N ngày (mặc định 30)
+Usage:
+  python history.py mark <classified.json>            record the keys into history
+  python history.py filter <in.json> <out.json>       keep only items NOT seen before
+  python history.py stats                             show what's currently in history
+  python history.py prune [days]                      delete entries older than N days (default 30)
 """
 import sys, json, os
 from datetime import datetime, timezone, timedelta
